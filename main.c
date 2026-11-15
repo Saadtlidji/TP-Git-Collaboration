@@ -114,7 +114,9 @@ int main(void)
 {
     int choice;
 
-    printf("Application de securite informatique - version A\n");
+    /* Conflit resolu manuellement : les deux titres sont fusionnes
+     * (feature/conflit-A avait "version A", feature/conflit-B "version B"). */
+    printf("Application de securite informatique - version A + B\n");
     ui_banner();
 
     for (;;) {

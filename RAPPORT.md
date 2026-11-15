@@ -95,7 +95,7 @@ fast-forward) afin de conserver la trace de la Pull Request.
 
 ### Partie C — Synchronisation et notifications
 
-Après chaque fusion : `git switch main && git pull origin main` (deux
+Après chaque fusion : `git switch main && git pull origin main` (plusieurs
 fast-forwards constatés, voir `docs/EVIDENCE.md`).
 
 Notifications : le dépôt est en **Watch → Custom** (vérifié par l'API :
@@ -148,7 +148,7 @@ git remote set-url origin git@github.com:Saadtlidji/TP-Git-Collaboration.git
 Clé **Ed25519** (empreinte `SHA256:BQxzd37Jcw7nfn5HIMlldwkBEKYCS62uZuUdb4DDKF0`),
 clé publique seule publiée sur GitHub, clé privée jamais affichée ni versionnée.
 Preuves : `ssh -T` et un `git push` / `git pull` effectués avec l'URL SSH
-(section 4 de `docs/EVIDENCE.md`).
+(section 6 de `docs/EVIDENCE.md`).
 
 ### Partie F — .gitignore
 

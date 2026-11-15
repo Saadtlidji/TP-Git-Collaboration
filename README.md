@@ -136,6 +136,10 @@ audite et ne doit jamais proteger de donnees reelles. Pour un usage reel :
    premiere ligne de `main.c`, resolu manuellement.
 4. Authentification SSH (cle Ed25519) pour les echanges avec GitHub.
 5. `.gitignore` verifie avec `git check-ignore -v`.
+6. Fork d'un depot public + remote `upstream` + Pull Request depuis le fork.
+7. Exercices avances dans un depot secondaire : reset / revert / reflog,
+   conflit multi-fichiers (`--ours` / `--theirs`), strategies de fusion
+   (fast-forward, `--no-ff`, `--squash`, rebase).
 
 Details et preuves : `docs/EVIDENCE.md` et `RAPPORT.md`.
 

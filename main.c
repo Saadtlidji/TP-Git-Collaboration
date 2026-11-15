@@ -114,7 +114,7 @@ int main(void)
 {
     int choice;
 
-    printf("Application de securite informatique\n");
+    printf("Application de securite informatique - version B\n");
     ui_banner();
 
     for (;;) {

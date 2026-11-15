@@ -89,6 +89,7 @@ avec les modules à l'état de squelette.
 | `feature/module3` | `feat(module3): rapport de securite et recommandations` | [#3](https://github.com/Saadtlidji/TP-Git-Collaboration/pull/3) | fusionnée |
 | `docs/rapport-final` | documentation, rapport, preuves | #4 | fusionnée |
 | `fix/docs-refinements` | corrections de cohérence et renvois | #5 | fusionnée |
+| `docs/pr-list` | liste complète des Pull Requests | #6 | fusionnée |
 
 Chaque branche a été compilée et testée **avant** le commit, puis poussée et
 fusionnée dans `main` via `gh pr merge --merge` (merge commit, pas de

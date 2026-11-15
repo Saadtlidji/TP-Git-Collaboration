@@ -47,6 +47,7 @@ $ git log --oneline --graph --all -12
 
 ```text
 $ gh pr list --state all
+6  docs: liste complete des Pull Requests                          docs/pr-list          MERGED
 5  docs: corrections de coherence (renvois, exercices avances)     fix/docs-refinements  MERGED
 4  docs: documentation complete et rapport du TP                   docs/rapport-final    MERGED
 3  feat(module3): affichage des resultats et rapport de securite    feature/module3       MERGED

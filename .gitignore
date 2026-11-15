@@ -1,0 +1,48 @@
+# ------------------------------------------------------------------
+# .gitignore - TP-Git-Collaboration
+# Objectif : ne jamais versionner les binaires, fichiers temporaires,
+# secrets locaux ni les dossiers d'editeur.
+# ------------------------------------------------------------------
+
+# --- Fichiers compiles / binaires ---
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.pdb
+securemsg
+securemsg.exe
+
+# --- Fichiers temporaires / journaux ---
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*~
+
+# --- Configuration locale et secrets ---
+.env
+.env.*
+*.local
+config.local
+secrets.txt
+
+# --- Dossiers d'editeur / IDE ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Systeme ---
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Dossiers de build ---
+build/
+bin/
+dist/
+*.dSYM/

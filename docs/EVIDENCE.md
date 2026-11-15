@@ -47,12 +47,14 @@ $ git log --oneline --graph --all -12
 
 ```text
 $ gh pr list --state all
-1  feat(module1): saisie et validation des entrees                 feature/module1  MERGED
-2  feat(module2): moteur de chiffrement et integrite               feature/module2  MERGED
-3  feat(module3): affichage des resultats et rapport de securite   feature/module3  MERGED
+5  docs: corrections de coherence (renvois, exercices avances)     fix/docs-refinements  MERGED
+4  docs: documentation complete et rapport du TP                   docs/rapport-final    MERGED
+3  feat(module3): affichage des resultats et rapport de securite    feature/module3       MERGED
+2  feat(module2): moteur de chiffrement et integrite                feature/module2       MERGED
+1  feat(module1): saisie et validation des entrees                  feature/module1       MERGED
 ```
 
-URLs : `.../pull/1`, `.../pull/2`, `.../pull/3`, `.../pull/4` (documentation).
+URLs : `.../pull/1` à `.../pull/5`.
 
 ## 4. Synchronisation après fusion (Partie C)
 

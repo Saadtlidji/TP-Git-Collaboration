@@ -161,7 +161,50 @@ Clé publique déposée sur GitHub (seule la partie publique est publiée) :
 $ gh ssh-key add ~/.ssh/id_ed25519.pub --title "TP-Git-Collaboration Windows"
 ```
 
-<!-- SSH_EVIDENCE -->
+Test de la connexion (preuve d'authentification, sans jamais afficher la clé privée) :
+
+```text
+$ ssh -T git@github.com
+Hi Saadtlidji! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+Changement du remote HTTPS → SSH :
+
+```text
+$ git remote -v                       # avant
+origin  https://github.com/Saadtlidji/TP-Git-Collaboration.git (fetch)
+origin  https://github.com/Saadtlidji/TP-Git-Collaboration.git (push)
+
+$ git remote set-url origin git@github.com:Saadtlidji/TP-Git-Collaboration.git
+
+$ git remote -v                       # apres
+origin  git@github.com:Saadtlidji/TP-Git-Collaboration.git (fetch)
+origin  git@github.com:Saadtlidji/TP-Git-Collaboration.git (push)
+```
+
+Preuve de push et de pull en SSH (aucune demande de mot de passe ni de token) :
+
+```text
+$ git push origin docs/rapport-final
+To github.com:Saadtlidji/TP-Git-Collaboration.git
+   050564c..1366949  docs/rapport-final -> docs/rapport-final
+
+$ git pull --ff-only origin docs/rapport-final
+ * branch            docs/rapport-final -> FETCH_HEAD
+Already up to date.
+
+$ git ls-remote --heads origin
+136694991a2af7832230b14396e3080be0ab5d32    refs/heads/docs/rapport-final
+6dd3ad13c94d86ba0d484db89cc5ef0c8c2001d4    refs/heads/feature/conflit-A
+...
+```
+
+Empreinte de la clé publique utilisée (la clé privée `~/.ssh/id_ed25519` reste
+sur la machine et n'a jamais été affichée ni versionnée) :
+
+```text
+SHA256:BQxzd37Jcw7nfn5HIMlldwkBEKYCS62uZuUdb4DDKF0  saaddidou738@gmail.com (ED25519)
+```
 
 ## 7. .gitignore (Partie F)
 
